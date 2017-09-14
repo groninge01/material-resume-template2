@@ -11,12 +11,21 @@
 
 .desc {
   color: var(--mdc-theme-text-primary-on-secondary);
-  background-color: var(--mdc-theme-secondary);
+  background-color: var(--mdc-theme-secondary-dark);
 }
 
-.hero {
+.hero, .social {
   color: var(--mdc-theme-text-primary-on-secondary);
   background-color: var(--mdc-theme-primary-light);
+}
+
+.social {
+  padding: 0px 50px;
+}
+
+.footer {
+  color: var(--mdc-theme-text-primary-on-primary);
+  background-color: var(--mdc-theme-primary-dark);
 }
 
 .no-bottom-margin {
@@ -26,6 +35,19 @@
 .padding-left-10 {
   padding-left: 10px;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.flex-item-social {
+  padding: 10px 10px;
+  text-align:center;
+}
+
 
 @media (min-width: 840px) {
   .grid-cell-padding-left-right {

@@ -1,0 +1,52 @@
+.my-modified-toolbar-section {
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+}
+  
+[dir="rtl"] .my-modified-toolbar-section {
+  right: auto;
+  left: 0;
+}
+
+.desc {
+  color: var(--mdc-theme-text-primary-on-secondary);
+  background-color: var(--mdc-theme-secondary);
+}
+
+.hero {
+  color: var(--mdc-theme-text-primary-on-secondary);
+  background-color: var(--mdc-theme-primary-light);
+}
+
+.no-bottom-margin {
+  margin-bottom: 0px;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
+}
+
+@media (min-width: 840px) {
+  .grid-cell-padding-left-right {
+    padding: 0px 50px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 839px) {
+  .grid-cell-padding-left-right {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 479px) {
+  .grid-cell-padding-left-right {
+    padding: 0px 10px;
+  }
+  .my-modified-toolbar-section {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+  }
+}
+

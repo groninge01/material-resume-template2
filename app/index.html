@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Material Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheets/normalize.css">
+    <link rel="stylesheet" href="assets/stylesheets/material-resume-template2.css">
+    <link rel="stylesheet" href="assets/stylesheets/material-components-web.css">
+    <style>
+        :root {
+            --mdc-theme-primary: #0aa1da;
+            --mdc-theme-primary-light: #62d2ff;
+            --mdc-theme-primary-dark: #0073a8;
+            --mdc-theme-text-primary-on-primary: #e5e5e5;
+
+            --mdc-theme-secondary: #576268;
+            --mdc-theme-secondary-light: #848f96;
+            --mdc-theme-secondary-dark: #2e383e;
+            --mdc-theme-text-primary-on-secondary: #e5e5e5;
+
+            --mdc-theme-background: #f7f7f7;
+
+            --mdc-layout-grid-margin-desktop: 0px;
+            --mdc-layout-grid-margin-tablet: 0px;
+            --mdc-layout-grid-margin-phone: 0px;
+            --mdc-layout-grid-gutter-desktop: 0px;
+            --mdc-layout-grid-gutter-tablet: 0px;
+            --mdc-layout-grid-gutter-phone: 0px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                <div class="mdc-toolbar">
+                    <div class="mdc-toolbar__row">
+                        <div class="mdc-toolbar__section my-modified-toolbar-section">
+                            <nav id="toolbar-tab-bar-modified" class="mdc-tab-bar">
+                                <a class="mdc-tab" href="#two">Hello</a>
+                                <a class="mdc-tab mdc-tab--active" href="#one">Resume</a>
+                                <a class="mdc-tab" href="#three">Portfolio</a>
+                                <span class="mdc-tab-bar__indicator"></span>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 hero grid-cell-padding-left-right">
+                <h1 class="mdc-typography--display4 no-bottom-margin">
+                    David Brown
+                </h1>
+                <h2 class="mdc-typography--display1 mdc-typography--adjust-margin padding-left-10">
+                    Architect
+                </h2>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 desc">
+                <p class="grid-cell-padding-left-right">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-4-phone">left column</div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--span-4-phone">right column</div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">social</div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--align-bottom">footer</div>
+        </div>
+      </div>
+  </body>
+</html>

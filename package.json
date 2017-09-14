@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "material-components-web": "^0.20.0",
+    "normalizecss": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

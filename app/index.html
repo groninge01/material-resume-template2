@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/stylesheets/normalize.css">
-    <link rel="stylesheet" href="assets/stylesheets/material-resume-template2.css">
     <link rel="stylesheet" href="assets/stylesheets/material-components-web.css">
+    <link rel="stylesheet" href="assets/stylesheets/css-circular-prog-bar.css">
+    <link rel="stylesheet" href="assets/stylesheets/material-resume-template2.css">
     <style>
         :root {
             --mdc-theme-primary: #2196f3;
@@ -202,10 +203,92 @@
                     </div>         
                 </div>
             </div>
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8  mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mdc-elevation--z8 right">
-                <p class="grid-cell-padding-left-right">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8  mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mdc-elevation--z8 right grid-cell-padding-left-right">
+                <h3 class="mdc-typography--title">Work</h3>
+                <ul class="mdc-list mdc-list--two-line">
+                  <li class="mdc-list-item my-modified-mdc-list-item-height">
+                    <span class="mdc-list-item__start-detail">
+                        <div class="outer-circle circle">
+                            <div class="inner-circle circle"></div>
+                        </div>
+                    </span>
+                    <span class="mdc-list-item__text">
+                      Design Director @ Big Design, New York
+                      <span class="mdc-list-item__text__secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </span>
+                    <span class="mdc-list-item__end-detail">2015</span>
+                  </li>
+                  <li role="separator" class="mdc-list-divider mdc-list-divider--inset"></li>
+                  <li class="mdc-list-item my-modified-mdc-list-item-height">
+                    <span class="mdc-list-item__start-detail">
+                      <div class="arrow-right"></div>
+                    </span>
+                    <span class="mdc-list-item__text">
+                      Design Director @ Big Design, New York
+                      <span class="mdc-list-item__text__secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </span>
+                    <span class="mdc-list-item__end-detail">2015</span>
+                  </li>
+                  <li role="separator" class="mdc-list-divider mdc-list-divider--inset"></li>
+                  <li class="mdc-list-item my-modified-mdc-list-item-height">
+                    <span class="mdc-list-item__start-detail">
+                      <i class="material-icons" aria-hidden="true">folder</i>
+                    </span>
+                    <span class="mdc-list-item__text">
+                      Design Director @ Big Design, New York
+                      <span class="mdc-list-item__text__secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </span>
+                    <span class="mdc-list-item__end-detail">2015</span>
+                  </li>                  
+                </ul>
+                <h3 class="mdc-typography--title">Professional Skills</h3>
+                <div class="flex-container padding-bottom-25">
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle over50 p100">
+                            <span>Angular</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle p10">
+                            <span>React</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle over50 p75">
+                            <span>CSS</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle over50 p90">
+                            <span>HTML</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle p50">
+                            <span>JS</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 social">
                 <div class="flex-container">

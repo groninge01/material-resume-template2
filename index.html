@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Material Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/stylesheets/normalize.css">
+    <link rel="stylesheet" href="assets/stylesheets/material-components-web.css">
+    <link rel="stylesheet" href="assets/stylesheets/css-circular-prog-bar.css">
+    <link rel="stylesheet" href="assets/stylesheets/material-resume-template2.css">
+    <style>
+        :root {
+            --mdc-theme-primary: #2196f3;
+            --mdc-theme-primary-light: #6ec6ff;
+            --mdc-theme-primary-dark: #0069c0;
+            --mdc-theme-text-primary-on-primary: rgba(255, 255, 255, 1);
+
+            --mdc-theme-secondary: #9e9e9e;
+            --mdc-theme-secondary-light: #cfcfcf;
+            --mdc-theme-secondary-dark: #707070;
+            --mdc-theme-text-primary-on-secondary: rgba(255, 255, 255, 1);
+
+            --mdc-theme-background: #fafafa;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                <div class="mdc-toolbar mdc-toolbar--fixed">
+                    <div class="mdc-toolbar__row">
+                        <div class="mdc-toolbar__section my-modified-toolbar-section">
+                            <nav id="toolbar-tab-bar-modified" class="mdc-tab-bar">
+                                <a class="mdc-tab" href="#two">Hello</a>
+                                <a class="mdc-tab mdc-tab--active" href="#one">Resume</a>
+                                <a class="mdc-tab" href="#three">Portfolio</a>
+                                <span class="mdc-tab-bar__indicator"></span>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-toolbar-fixed-adjust mdc-elevation--z10 hero grid-cell-padding-left-right">
+                <h1 class="mdc-typography--display4 no-bottom-margin">
+                    David Brown
+                </h1>
+                <h2 class="mdc-typography--display1 mdc-typography--adjust-margin padding-left-10">
+                    Architect
+                </h2>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 desc grid-cell-padding-left-right">
+                <p class="no-bottom-margin">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+                <p class="no-top-margin">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mdc-elevation--z8 left grid-cell-padding-left-right">
+                <h3 class="mdc-typography--title">Personal</h3>
+                <table class="bordered">
+                    <tr>
+                        <td class="mdc-typography--body2">Name</td><td class="mdc-typography--body1">David Brown</td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">Birthday</td><td class="mdc-typography--body1">31<sup>st</sup> December 1992 (27)</td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">Relationship</td><td class="mdc-typography--body1">Single</td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">Nationality</td><td class="mdc-typography--body1">US Citizen</td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">Languages</td><td class="mdc-typography--body1">English, French</td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">Cell</td><td class="mdc-typography--body1">+1 (212) 123-4567</td>
+                    </tr>
+                </table>
+                <h3 class="mdc-typography--title">Software</h3>
+                <table>
+                    <tr>
+                        <td class="mdc-typography--body2">Indesign CC</td>
+                        <td>
+                            <div role="progressbar" class="mdc-linear-progress">
+                                <div class="mdc-linear-progress__buffering-dots"></div>
+                                <div class="mdc-linear-progress__buffer"></div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-100">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">Illustrator CC</td>
+                        <td>
+                            <div role="progressbar" class="mdc-linear-progress">
+                                <div class="mdc-linear-progress__buffering-dots"></div>
+                                <div class="mdc-linear-progress__buffer"></div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-100">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">Photoshop CC</td>
+                        <td>
+                            <div role="progressbar" class="mdc-linear-progress">
+                                <div class="mdc-linear-progress__buffering-dots"></div>
+                                <div class="mdc-linear-progress__buffer"></div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-87">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">Sketch 3</td>
+                        <td>
+                            <div role="progressbar" class="mdc-linear-progress">
+                                <div class="mdc-linear-progress__buffering-dots"></div>
+                                <div class="mdc-linear-progress__buffer"></div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-56">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">HTML 5</td>
+                        <td>
+                            <div role="progressbar" class="mdc-linear-progress">
+                                <div class="mdc-linear-progress__buffering-dots"></div>
+                                <div class="mdc-linear-progress__buffer"></div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-33">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdc-typography--body2">CSS 3</td>
+                        <td>
+                            <div role="progressbar" class="mdc-linear-progress">
+                                <div class="mdc-linear-progress__buffering-dots"></div>
+                                <div class="mdc-linear-progress__buffer"></div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-33">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                    <span class="mdc-linear-progress__bar-inner"></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <h3 class="mdc-typography--title">Hobbies</h3>
+                <div class="flex-container padding-bottom-25">
+                    <div class="flex-item w-25">
+                        <i class="material-icons icon">rowing</i><br>
+                        <span class="mdc-typography--caption">rowing</span>
+                    </div>
+                    <div class="flex-item w-25">
+                        <i class="material-icons icon">pool</i><br>
+                        <span class="mdc-typography--caption">swimming</span>
+                    </div>  
+                    <div class="flex-item w-25">
+                        <i class="material-icons icon">directions_run</i><br>
+                        <span class="mdc-typography--caption">running</span>
+                    </div>    
+                    <div class="flex-item w-25">
+                        <i class="material-icons icon">rowing</i><br>
+                        <span class="mdc-typography--caption">rowing</span>
+                    </div>
+                    <div class="flex-item w-25">
+                        <i class="material-icons icon">pool</i><br>
+                        <span class="mdc-typography--caption">swimming</span>
+                    </div>  
+                    <div class="flex-item w-25">
+                        <i class="material-icons icon">directions_run</i><br>
+                        <span class="mdc-typography--caption">running</span>
+                    </div>         
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8  mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mdc-elevation--z8 right grid-cell-padding-left-right">
+                <h3 class="mdc-typography--title">Work</h3>
+                <ul class="mdc-list mdc-list--two-line">
+                  <li class="mdc-list-item my-modified-mdc-list-item-height">
+                    <span class="mdc-list-item__start-detail">
+                        <div class="outer-circle circle">
+                            <div class="inner-circle circle"></div>
+                        </div>
+                    </span>
+                    <span class="mdc-list-item__text">
+                      Design Director @ Big Design, New York
+                      <span class="mdc-list-item__text__secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </span>
+                    <span class="mdc-list-item__end-detail">2015</span>
+                  </li>
+                  <li role="separator" class="mdc-list-divider mdc-list-divider--inset"></li>
+                  <li class="mdc-list-item my-modified-mdc-list-item-height">
+                    <span class="mdc-list-item__start-detail">
+                      <div class="arrow-right"></div>
+                    </span>
+                    <span class="mdc-list-item__text">
+                      Design Director @ Big Design, New York
+                      <span class="mdc-list-item__text__secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </span>
+                    <span class="mdc-list-item__end-detail">2015</span>
+                  </li>
+                  <li role="separator" class="mdc-list-divider mdc-list-divider--inset"></li>
+                  <li class="mdc-list-item my-modified-mdc-list-item-height">
+                    <span class="mdc-list-item__start-detail">
+                      <i class="material-icons" aria-hidden="true">folder</i>
+                    </span>
+                    <span class="mdc-list-item__text">
+                      Design Director @ Big Design, New York
+                      <span class="mdc-list-item__text__secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </span>
+                    <span class="mdc-list-item__end-detail">2015</span>
+                  </li>                  
+                </ul>
+                <h3 class="mdc-typography--title">Professional Skills</h3>
+                <div class="flex-container padding-bottom-25">
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle over50 p100">
+                            <span>Angular</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle p10">
+                            <span>React</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle over50 p75">
+                            <span>CSS</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle over50 p90">
+                            <span>HTML</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item-skills w-15">
+                        <div class="progress-circle p50">
+                            <span>JS</span>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 social">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <svg style="width:60px;height:60px" viewBox="0 0 60 60">
+                                <g
+                                id="black"
+                                stroke-width="1"
+                                stroke="none"
+                                fill-rule="evenodd"
+                                fill="none">
+                               <g
+                                  id="behance">
+                                 <path
+                                    d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z"
+                                    id="path166"
+                                    fill="#ffffff" />
+                                 <path
+                                    d="M35.423091,19.8620192 L35.423091,22.1697115 L44.6538602,22.1697115 L44.6538602,19.8620192 L35.423091,19.8620192 Z M12.1153846,18.6608699 L22.7675034,18.7788462 C22.7675034,18.7788462 28.6170466,18.4703274 29.4233025,23.1146711 C30.2295586,27.7590147 26.4808824,28.8562946 26.4808824,28.8562946 C26.4808824,28.8562946 31.1104642,29.9078218 30.4658208,35.3325942 C29.8211774,40.7573666 23.4993619,40.8133524 23.4993619,40.8133524 L12.1153846,40.8133519 L12.1153846,18.6608699 Z M16.9615525,27.4774461 L21.3695837,27.5049514 C21.6516893,27.5049514 22.3933893,27.4803467 23.0034696,27.336314 C23.2646051,27.2746631 23.7728004,27.0992632 24.1236635,26.782913 C24.2693523,26.6515549 24.5377436,26.2814743 24.6926203,25.8428777 C24.8431477,25.4165979 24.8822726,24.9224763 24.8822726,24.7329064 C24.8822726,24.3858127 24.8190558,24.0645214 24.6926204,23.7690227 C24.5661849,23.4735241 24.3765346,23.2178981 24.1236637,23.0021372 C23.8707928,22.7863762 23.5492118,22.6175224 23.1589111,22.4955706 C22.7686104,22.3736187 22.3041046,22.3126437 21.7653796,22.3126437 L16.9615525,22.2851384 L16.9615525,27.4774461 Z M16.9615525,36.7931713 L21.7775823,36.8235718 C22.085799,36.8235718 22.8961493,36.7963772 23.5626975,36.6371843 C23.8480031,36.5690442 24.403236,36.3751824 24.7865743,36.0255343 C24.9457478,35.88035 25.2389808,35.4713161 25.4081926,34.9865544 C25.5726525,34.5154061 25.6153987,33.9692752 25.6153987,33.7597518 C25.6153987,33.3761244 25.5463307,33.0210151 25.4081927,32.6944134 C25.2700546,32.3678116 25.0628506,32.0852794 24.7865745,31.8468083 C24.5102984,31.6083372 24.1589525,31.4217105 23.7325263,31.2869225 C23.3061002,31.1521344 22.7986006,31.0847414 22.2100123,31.0847414 L16.9615525,31.054341 L16.9615525,36.7931713 Z M36.4409618,33.8425717 C36.4478888,33.9715799 36.4409618,37.1532913 39.0477765,37.8840146 C42.0741904,38.7323569 43.4230089,36.2185003 43.5277016,35.92719 L47.4917991,35.92719 C47.3892504,36.404656 45.7778324,42.9046671 37.0105169,40.7862084 C31.6287911,39.4858138 31.9055364,33.1135742 31.9055364,32.5678709 C31.9055364,32.0652391 31.9271709,29.3919629 34.0958158,26.9267578 C36.2644605,24.4615525 39.3520177,24.4615524 39.9772696,24.4615525 C40.6025216,24.4615527 43.818071,24.4615525 45.7778318,26.6370568 C48.3134961,29.4518638 47.8105721,33.9621338 47.8105721,33.9621338 L36.4409618,33.8425717 Z M43.3846295,31.054341 C43.3538948,30.5556423 43.2540087,30.0960641 43.0849681,29.6755926 C42.9159275,29.2551212 42.6828598,28.890881 42.3857581,28.5828612 C42.0886565,28.2748414 41.732652,28.0328295 41.3177342,27.8568182 C40.9028163,27.6808069 40.4392422,27.5928025 39.9269979,27.5928025 C39.4659781,27.5928025 39.0382605,27.685696 38.6438325,27.8714857 C38.2494044,28.0572754 37.9036447,28.3090656 37.606543,28.6268638 C37.3094413,28.944662 37.0712513,29.3113468 36.8919658,29.726929 C36.7126803,30.1425113 36.6076718,30.5849775 36.5769372,31.054341 L43.3846295,31.054341 Z"
+                                    id="path168"
+                                    fill="#6ec6ff" />
+                               </g>
+                             </g>
+                        </svg>
+                        <p>www.behance.com/david.brown</p>
+                    </div>
+                    <div class="flex-item">
+                        <svg style="width:60px;height:60px" viewBox="0 0 60 60">
+                                <path
+                                d="M 46.837,44.137 V 32.425 c 0,-6.275 -3.35,-9.195 -7.816,-9.195 -3.604,0 -5.219,1.983 -6.119,3.374 V 23.71 h -6.79 c 0.09,1.917 0,20.427 0,20.427 h 6.79 V 32.729 c 0,-0.609 0.044,-1.219 0.224,-1.655 0.49,-1.22 1.607,-2.483 3.482,-2.483 2.458,0 3.44,1.873 3.44,4.618 v 10.929 h 6.789 z M 18.959,20.922 c 2.367,0 3.842,-1.57 3.842,-3.531 -0.044,-2.003 -1.475,-3.528 -3.797,-3.528 -2.322,0 -3.841,1.524 -3.841,3.528 0,1.961 1.474,3.531 3.753,3.531 z M 30,60 C 13.432,60 0,46.568 0,30 0,13.431 13.432,0 30,0 46.568,0 60,13.431 60,30 60,46.568 46.568,60 30,60 Z M 22.354,44.137 V 23.71 h -6.789 v 20.427 z"
+                                style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+                                id="path281"
+                                inkscape:connector-curvature="0" />
+                        </svg>
+                        <p>www.linkedin.com/david.brown</p>
+                    </div>
+                    <div class="flex-item">
+                        <svg style="width:67px;height:67px" viewBox="0 0 67 67">
+                            <path
+                            d="m 34.167,18.283 c -2.619,0.953 -4.274,3.411 -4.086,6.101 l 0.063,1.038 -1.048,-0.127 C 25.283,24.808 21.951,23.156 19.122,20.38 l -1.383,-1.377 -0.356,1.017 c -0.754,2.267 -0.272,4.661 1.299,6.271 0.838,0.89 0.649,1.017 -0.796,0.487 -0.503,-0.169 -0.943,-0.296 -0.985,-0.233 -0.146,0.149 0.356,2.076 0.754,2.839 0.545,1.06 1.655,2.097 2.871,2.712 l 1.027,0.487 -1.215,0.021 c -1.173,0 -1.215,0.021 -1.089,0.467 0.419,1.377 2.074,2.839 3.918,3.475 l 1.299,0.444 -1.131,0.678 c -1.676,0.976 -3.646,1.526 -5.616,1.567 -0.944,0.021 -1.719,0.106 -1.719,0.17 0,0.211 2.557,1.397 4.044,1.864 4.463,1.377 9.765,0.783 13.746,-1.568 2.829,-1.674 5.657,-5 6.978,-8.221 0.713,-1.715 1.425,-4.851 1.425,-6.354 0,-0.975 0.063,-1.102 1.236,-2.267 0.692,-0.678 1.341,-1.419 1.467,-1.631 0.21,-0.403 0.188,-0.403 -0.88,-0.043 -1.781,0.636 -2.033,0.551 -1.152,-0.402 0.649,-0.678 1.425,-1.907 1.425,-2.267 0,-0.063 -0.314,0.042 -0.671,0.233 -0.377,0.212 -1.215,0.53 -1.844,0.72 l -1.131,0.361 -1.027,-0.7 C 39.05,18.749 38.255,18.325 37.835,18.198 36.766,17.902 35.131,17.944 34.167,18.283 Z M 30,60 C 13.432,60 0,46.568 0,30 0,13.431 13.432,0 30,0 46.568,0 60,13.431 60,30 60,46.568 46.568,60 30,60 Z"
+                            style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+                            id="path225"
+                            inkscape:connector-curvature="0" />
+                        </svg>
+                        <p>www.twitter.com/david.brown</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 footer">
+                <div class="flex-container">
+                    <div class="flex-item-footer">
+                        Flat 2, 10 Broadway, New York, NY 12345
+                    </div>
+                    <div class="flex-item-footer">
+                        Cell: +1 (212) 123-4567
+                    </div>
+                    <div class="flex-item-footer">
+                        Email: davidbrown@gmail.com
+                    </div>
+                    <div class="flex-item-footer">
+                        www.davidbrown.com
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+  </body>
+</html>

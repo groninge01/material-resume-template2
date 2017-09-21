@@ -1,41 +1,23 @@
-.my-modified-toolbar-section {
+/*
+mdc additions/modifications
+*/
+
+.mdc-toolbar__section--fixed {
   position: absolute;
   left: 0;
   bottom: -16px;
 }
   
-[dir="rtl"] .my-modified-toolbar-section {
+[dir="rtl"] .mdc-toolbar__section--fixed {
   right: auto;
   left: 0;
 }
 
-.desc {
-  color: var(--mdc-theme-text-primary-on-secondary);
-  background-color: var(--mdc-theme-secondary-dark);
+.mdc-typography--primary {
+  color: var(--mdc-theme-primary-light);
 }
 
-.hero, .social {
-  color: var(--mdc-theme-text-primary-on-secondary);
-  background-color: var(--mdc-theme-primary-light);
-}
-
-.social {
-  padding: 10px 50px 0px;
-}
-
-.padding-bottom-25 {
-  padding-bottom: 25px;
-}
-
-
-
-.footer {
-  color: var(--mdc-theme-text-primary-on-primary);
-  background-color: var(--mdc-theme-primary-dark);
-  padding: 10px;
-}
-
-.icon {
+.material-icons--rounded {
   font-size: 3em;
   background-color: var(--mdc-theme-primary-light);
   color: var(--mdc-theme-text-primary-on-primary);
@@ -49,6 +31,46 @@
   vertical-align: middle;
 }
 
+.mdc-linear-progress--p-33 {
+  transform: scaleX(0.33);
+}
+
+.mdc-linear-progress--p-87 {
+  transform: scaleX(0.87);
+}
+
+.mdc-linear-progress--p-100 {
+  transform: scaleX(1);
+}
+
+.mdc-linear-progress--p-56 {
+  transform: scaleX(0.56);
+}
+
+/* 
+sections
+*/
+
+.secondary-section {
+  color: var(--mdc-theme-text-primary-on-secondary);
+  background-color: var(--mdc-theme-primary-light);
+}
+
+.tertiary-section {
+  color: var(--mdc-theme-text-primary-on-secondary);
+  background-color: var(--mdc-theme-secondary-dark);
+}
+
+.quartenary-section {
+  color: var(--mdc-theme-text-primary-on-primary);
+  background-color: var(--mdc-theme-primary-dark);
+  padding: 10px;
+}
+
+/*
+margins & padding
+*/
+
 .no-bottom-margin {
   margin-bottom: 0px;
 }
@@ -61,6 +83,9 @@
   padding-left: 10px;
 }
 
+/*
+flexbox
+*/
 
 .flex-container {
   display: flex;
@@ -74,64 +99,54 @@
   text-align:center;
 }
 
-.flex-item-skills {
+.flex-container--padded {
+  padding-bottom: 25px;
+}
+
+.flex-item--big {
   flex-shrink: 0;
   width: 100px;
   margin-right: 10px;
 }
 
-.w-25 {
+.flex-item--small {
   width: 25%;
 }
 
-h3 {
-  color: var(--mdc-theme-primary-light);
-}
-table {
+/*
+left column lists
+*/
+
+.list {
   min-width: 100%;
 }
-.bordered tr {
+
+.list__row--bordered {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-td {
+.list__item--padded {
   padding: 10px 0px;
 }
 
-td:first-child {
-  width: 33%;
+.list__item--small {
+  width: 40%;
 }
 
-td:last-child {
-  width: 67%;
+.list__item--big {
+  width: 60%;
 }
 
-.progress-33 {
-  transform: scaleX(0.33);
-}
-
-.progress-87 {
-  transform: scaleX(0.87);
-}
-
-.progress-100 {
-  transform: scaleX(1);
-}
-
-.progress-56 {
-  transform: scaleX(0.56);
-}
-
-.my-modified-mdc-list-item-align-items {
-  align-self: flex-start;
-}
+/*
+bullet figures
+*/
 
  /*
  https://davidwalsh.name/css-triangles
  */
 
 /* create an arrow that points right */
-div.arrow-right {
+.arrow-right {
 	width: 0; 
 	height: 0; 
 	border-bottom: 25px solid transparent;  /* left arrow slant */
@@ -168,29 +183,27 @@ div.arrow-right {
   display: block;
 }
 
-
+/*
+media queries
+*/ 
 @media (min-width: 840px) {
-  .grid-cell-padding-left-right {
+  .mdc-layout-grid__cell--padding-sides {
     padding: 0px 50px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 839px) {
-  .grid-cell-padding-left-right {
-    padding: 0px 50px;
-  }
+
 }
 
 @media (max-width: 479px) {
-  .grid-cell-padding-left-right {
+  .mdc-layout-grid__cell--padding-sides {
     padding: 0px 25px;
   }
-  .my-modified-toolbar-section {
-    position: absolute;
-    left: 0;
+  .mdc-toolbar__section--fixed {
     bottom: -8px;
   }
-  .mdc-list--two-line .my-modified-mdc-list-item-height {
+  .mdc-list--two-line .mdc-list-item--bigger {
     height: 115px;
   }
 }

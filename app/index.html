@@ -33,7 +33,7 @@
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
                 <div class="mdc-toolbar mdc-toolbar--fixed">
                     <div class="mdc-toolbar__row">
-                        <div class="mdc-toolbar__section my-modified-toolbar-section">
+                        <div class="mdc-toolbar__section mdc-toolbar__section--fixed">
                             <nav id="toolbar-tab-bar-modified" class="mdc-tab-bar">
                                 <a class="mdc-tab" href="#two">Hello</a>
                                 <a class="mdc-tab mdc-tab--active" href="#one">Resume</a>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-toolbar-fixed-adjust mdc-elevation--z10 hero grid-cell-padding-left-right">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-toolbar-fixed-adjust mdc-elevation--z10 secondary-section mdc-layout-grid__cell--padding-sides">
                 <h1 class="mdc-typography--display4 no-bottom-margin">
                     David Brown
                 </h1>
@@ -52,7 +52,7 @@
                     Architect
                 </h2>
             </div>
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 desc grid-cell-padding-left-right">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--padding-sides tertiary-section">
                 <p class="no-bottom-margin">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </p>
@@ -60,153 +60,129 @@
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </div>
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mdc-elevation--z8 left grid-cell-padding-left-right">
-                <h3 class="mdc-typography--title">Personal</h3>
-                <table class="bordered">
-                    <tr>
-                        <td class="mdc-typography--body2">Name</td><td class="mdc-typography--body1">David Brown</td>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mdc-elevation--z8 mdc-layout-grid__cell--padding-sides primary-section">
+                <h3 class="mdc-typography--title mdc-typography--primary">Personal</h3>
+                <table class="list">
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Name</td>
+                        <td class="mdc-typography--body1 list__item--big">David Brown</td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">Birthday</td><td class="mdc-typography--body1">31<sup>st</sup> December 1992 (27)</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Birthday</td>
+                        <td class="mdc-typography--body1 list__item--big">31<sup>st</sup> December 1992 (27)</td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">Relationship</td><td class="mdc-typography--body1">Single</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Relationship</td>
+                        <td class="mdc-typography--body1 list__item--big">Single</td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">Nationality</td><td class="mdc-typography--body1">US Citizen</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Nationality</td>
+                        <td class="mdc-typography--body1 list__item--big">US Citizen</td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">Languages</td><td class="mdc-typography--body1">English, French</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Languages</td>
+                        <td class="mdc-typography--body1 list__item--big">English, French</td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">Cell</td><td class="mdc-typography--body1">+1 (212) 123-4567</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Cell</td>
+                        <td class="mdc-typography--body1 list__item--big">+1 (212) 123-4567</td>
                     </tr>
                 </table>
-                <h3 class="mdc-typography--title">Software</h3>
-                <table>
-                    <tr>
-                        <td class="mdc-typography--body2">Indesign CC</td>
-                        <td>
+                <h3 class="mdc-typography--title mdc-typography--primary">Software</h3>
+                <table class="list">
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Indesign CC</td>
+                        <td class="list__item--big">
                             <div role="progressbar" class="mdc-linear-progress">
-                                <div class="mdc-linear-progress__buffering-dots"></div>
-                                <div class="mdc-linear-progress__buffer"></div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-100">
-                                    <span class="mdc-linear-progress__bar-inner"></span>
-                                </div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar mdc-linear-progress--p-100">
                                     <span class="mdc-linear-progress__bar-inner"></span>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">Illustrator CC</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Illustrator CC</td>
                         <td>
                             <div role="progressbar" class="mdc-linear-progress">
-                                <div class="mdc-linear-progress__buffering-dots"></div>
-                                <div class="mdc-linear-progress__buffer"></div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-100">
-                                    <span class="mdc-linear-progress__bar-inner"></span>
-                                </div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar mdc-linear-progress--p-100">
                                     <span class="mdc-linear-progress__bar-inner"></span>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">Photoshop CC</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Photoshop CC</td>
                         <td>
                             <div role="progressbar" class="mdc-linear-progress">
-                                <div class="mdc-linear-progress__buffering-dots"></div>
-                                <div class="mdc-linear-progress__buffer"></div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-87">
-                                    <span class="mdc-linear-progress__bar-inner"></span>
-                                </div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar mdc-linear-progress--p-87">
                                     <span class="mdc-linear-progress__bar-inner"></span>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">Sketch 3</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">Sketch 3</td>
                         <td>
                             <div role="progressbar" class="mdc-linear-progress">
-                                <div class="mdc-linear-progress__buffering-dots"></div>
-                                <div class="mdc-linear-progress__buffer"></div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-56">
-                                    <span class="mdc-linear-progress__bar-inner"></span>
-                                </div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar mdc-linear-progress--p-56">
                                     <span class="mdc-linear-progress__bar-inner"></span>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">HTML 5</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">HTML 5</td>
                         <td>
                             <div role="progressbar" class="mdc-linear-progress">
-                                <div class="mdc-linear-progress__buffering-dots"></div>
-                                <div class="mdc-linear-progress__buffer"></div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-33">
-                                    <span class="mdc-linear-progress__bar-inner"></span>
-                                </div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar mdc-linear-progress--p-33">
                                     <span class="mdc-linear-progress__bar-inner"></span>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="mdc-typography--body2">CSS 3</td>
+                    <tr class="list__row--bordered">
+                        <td class="mdc-typography--body2 list__item--padded list__item--small">CSS 3</td>
                         <td>
                             <div role="progressbar" class="mdc-linear-progress">
-                                <div class="mdc-linear-progress__buffering-dots"></div>
-                                <div class="mdc-linear-progress__buffer"></div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar progress-33">
-                                    <span class="mdc-linear-progress__bar-inner"></span>
-                                </div>
-                                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar mdc-linear-progress--p-33">
                                     <span class="mdc-linear-progress__bar-inner"></span>
                                 </div>
                             </div>
                         </td>
                     </tr>
                 </table>
-                <h3 class="mdc-typography--title">Hobbies</h3>
-                <div class="flex-container padding-bottom-25">
-                    <div class="flex-item w-25">
-                        <i class="material-icons icon">rowing</i><br>
+                <h3 class="mdc-typography--title mdc-typography--primary">Hobbies</h3>
+                <div class="flex-container flex-container--padded">
+                    <div class="flex-item flex-item--small">
+                        <i class="material-icons material-icons--rounded">rowing</i><br>
                         <span class="mdc-typography--caption">rowing</span>
                     </div>
-                    <div class="flex-item w-25">
-                        <i class="material-icons icon">pool</i><br>
+                    <div class="flex-item flex-item--small">
+                        <i class="material-icons material-icons--rounded">pool</i><br>
                         <span class="mdc-typography--caption">swimming</span>
                     </div>  
-                    <div class="flex-item w-25">
-                        <i class="material-icons icon">directions_run</i><br>
+                    <div class="flex-item flex-item--small">
+                        <i class="material-icons material-icons--rounded">directions_run</i><br>
                         <span class="mdc-typography--caption">running</span>
                     </div>    
-                    <div class="flex-item w-25">
-                        <i class="material-icons icon">rowing</i><br>
+                    <div class="flex-item flex-item--small">
+                        <i class="material-icons material-icons--rounded">rowing</i><br>
                         <span class="mdc-typography--caption">rowing</span>
                     </div>
-                    <div class="flex-item w-25">
-                        <i class="material-icons icon">pool</i><br>
+                    <div class="flex-item flex-item--small">
+                        <i class="material-icons material-icons--rounded">pool</i><br>
                         <span class="mdc-typography--caption">swimming</span>
                     </div>  
-                    <div class="flex-item w-25">
-                        <i class="material-icons icon">directions_run</i><br>
+                    <div class="flex-item flex-item--small">
+                        <i class="material-icons material-icons--rounded">directions_run</i><br>
                         <span class="mdc-typography--caption">running</span>
                     </div>         
                 </div>
             </div>
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8  mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mdc-elevation--z8 right grid-cell-padding-left-right">
-                <h3 class="mdc-typography--title">Work</h3>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8  mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone mdc-elevation--z8 mdc-layout-grid__cell--padding-sides primary-section">
+                <h3 class="mdc-typography--title mdc-typography--primary">Work</h3>
                 <ul class="mdc-list mdc-list--two-line">
-                  <li class="mdc-list-item my-modified-mdc-list-item-height">
+                  <li class="mdc-list-item mdc-list-item--bigger">
                     <span class="mdc-list-item__start-detail">
                         <div class="outer-circle circle">
                             <div class="inner-circle circle"></div>
@@ -219,7 +195,7 @@
                     <span class="mdc-list-item__end-detail">2015</span>
                   </li>
                   <li role="separator" class="mdc-list-divider mdc-list-divider--inset"></li>
-                  <li class="mdc-list-item my-modified-mdc-list-item-height">
+                  <li class="mdc-list-item mdc-list-item--bigger">
                     <span class="mdc-list-item__start-detail">
                       <div class="arrow-right"></div>
                     </span>
@@ -230,7 +206,7 @@
                     <span class="mdc-list-item__end-detail">2015</span>
                   </li>
                   <li role="separator" class="mdc-list-divider mdc-list-divider--inset"></li>
-                  <li class="mdc-list-item my-modified-mdc-list-item-height">
+                  <li class="mdc-list-item mdc-list-item--bigger">
                     <span class="mdc-list-item__start-detail">
                       <i class="material-icons" aria-hidden="true">folder</i>
                     </span>
@@ -241,9 +217,9 @@
                     <span class="mdc-list-item__end-detail">2015</span>
                   </li>                  
                 </ul>
-                <h3 class="mdc-typography--title">Professional Skills</h3>
-                <div class="flex-container padding-bottom-25">
-                    <div class="flex-item-skills w-15">
+                <h3 class="mdc-typography--title mdc-typography--primary">Professional Skills</h3>
+                <div class="flex-container flex-container--padded">
+                    <div class="flex-item--big w-15">
                         <div class="progress-circle over50 p100">
                             <span>Angular</span>
                             <div class="left-half-clipper">
@@ -252,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-item-skills w-15">
+                    <div class="flex-item--big w-15">
                         <div class="progress-circle p10">
                             <span>React</span>
                             <div class="left-half-clipper">
@@ -261,7 +237,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-item-skills w-15">
+                    <div class="flex-item--big w-15">
                         <div class="progress-circle over50 p75">
                             <span>CSS</span>
                             <div class="left-half-clipper">
@@ -270,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-item-skills w-15">
+                    <div class="flex-item--big w-15">
                         <div class="progress-circle over50 p90">
                             <span>HTML</span>
                             <div class="left-half-clipper">
@@ -279,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-item-skills w-15">
+                    <div class="flex-item--big w-15">
                         <div class="progress-circle p50">
                             <span>JS</span>
                             <div class="left-half-clipper">
@@ -290,7 +266,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 social">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 secondary-section">
                 <div class="flex-container">
                     <div class="flex-item">
                         <svg style="width:60px;height:60px" viewBox="0 0 60 60">
@@ -337,7 +313,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 footer">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 quartenary-section">
                 <div class="flex-container">
                     <div class="flex-item-footer">
                         Flat 2, 10 Broadway, New York, NY 12345

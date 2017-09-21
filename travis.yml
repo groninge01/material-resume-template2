@@ -1,0 +1,7 @@
+deploy:
+  provider: surge
+  skip_cleanup: true
+  project: ./app/
+  domain: unwritten-farmer.surge.sh  
+  on:
+    branch: master
